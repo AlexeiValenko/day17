@@ -1,5 +1,4 @@
 "use strict"
-//--------------------------------------------
 
 function Person(name, id, number) {
     this.name = name;
@@ -46,13 +45,10 @@ List.prototype.get = function() {
 }
 
 List.prototype.delete = function(index) {
-    this.list.splice(index,1);
+    delete this.list[index];
 }
 
-
+//--------------------------------------------
 
 
  var contact = new List();
-// contact.add('a',1);
-// contact.add('b',2);
-// contact.add('c',3);
